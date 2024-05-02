@@ -8,16 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>
-        {% block title %}
-        App Coderhouse
-        {% endblock title %}
-    </title>
-    <!-- Favicon-->
+    {% block title %}
+    Tienda Edgard
+    {% endblock title %}
     <link rel="icon" type="image/x-icon" href="{% static 'core/assets/favicon.ico' %}" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'core/css/styles.css' %}" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
+
+
 
 <body>
     <!-- Responsive navbar-->
@@ -26,9 +33,9 @@
     <div class="container px-4 px-lg-5">
 
         <div class="row align-items-center my-5">
-            <h1 class="pb-lg-3 text-white bg-info px-3 py-2 rounded">
+            <h1 class="pb-lg-3 text-white px-3 py-2 rounded" style="background-color: #ff0080">
                 {% block titulo %}
-                App Coder
+                Tienda Edgard
                 {% endblock titulo %}
             </h1>
         </div>

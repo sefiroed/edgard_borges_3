@@ -1,6 +1,15 @@
 # edgard_borges_3
 Tercera preentrega
 
+# Comisión
+> 54135
+
+# Alumno
+> Edgard Borges
+
+# Acerca del proyecto
+
+> Tercera preentrega Donde vamos a trabajar con django.
 
 # Comandos
 

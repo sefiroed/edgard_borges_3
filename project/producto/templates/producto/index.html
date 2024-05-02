@@ -9,6 +9,11 @@ Productos
 <div class="fs-3 pb-4">
     <a href="{% url 'producto:productocategoria_create' %}">Crear categorías de Productos</a>
 </div>
+<div class="py-lg-4">
+    <form action="{% url 'producto:home' %}" method="get">
+        <input type="text" name="consulta" placeholder="Buscar...">
+    </form>
+</div>
 
 <ul>
     {% for producto in productos %}

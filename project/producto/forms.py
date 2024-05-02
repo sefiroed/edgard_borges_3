@@ -9,5 +9,9 @@ from . import models
 
 class ProductoCategoriaForm(forms.ModelForm):
     class Meta:
-        model = models.ProductoCategoria()
+        model = models.ProductoCategoria
         fields = "__all__"
+        widgets = {
+            "nombre": forms.TextInput(attrs={"class": "form-control"}),
+            "descripcion": forms.TextInput(attrs={"class": "form-control"}),
+        }
