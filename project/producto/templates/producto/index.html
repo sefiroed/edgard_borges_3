@@ -6,9 +6,12 @@ Productos
 
 {% block contenido %}
 
-<div class="fs-3 pb-4">
-    <a href="{% url 'producto:productocategoria_create' %}">Crear categorías de Productos</a>
+<div style="display: flex; align-items: center;">
+    <div class="fs-3 pb-4">
+        <a href="{% url 'producto:instrumentos_de_cuerdas' %}">Crear instrumentos de cuerdas</a>
+    </div>
 </div>
+
 <div class="py-lg-4">
     <form action="{% url 'producto:home' %}" method="get">
         <input type="text" name="consulta" placeholder="Buscar...">
