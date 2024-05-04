@@ -1,14 +1,22 @@
 {% extends 'core/base.html' %}
 
 {% block titulo %}
-Productos
+Productos De Musica
 {% endblock titulo %}
 
-{% block contenido %}
 
-<div style="display: flex; align-items: center;">
+{% block contenido %}
+<div style="display: flex; justify-content: start; gap: 20px; align-items: center;">
     <div class="fs-3 pb-4">
-        <a href="{% url 'producto:instrumentos_de_cuerdas' %}">Crear instrumentos de cuerdas</a>
+        <a href="{% url 'producto:productocategoria_create' %}" class="btn btn-primary">Crear Instrumento Musical</a>
+    </div>
+    <div class="fs-3 pb-4">
+        <a href="{% url 'producto:instrumentos_de_cuerdas' %}" class="btn btn-primary">Crear categoría instrumentos de
+            cuerdas</a>
+    </div>
+    <div class="fs-3 pb-4">
+        <a href="{% url 'producto:instrumentos_de_aire' %}" class="btn btn-primary">Crear categoría instrumentos de
+            aire</a>
     </div>
 </div>
 
@@ -20,9 +28,10 @@ Productos
 
 <ul>
     {% for producto in productos %}
-    <li> {{ producto }} </li>
-
+    <li>{{ producto }}</li>
     {% endfor %}
 </ul>
+
 {# <a href="{% url 'core:home' %}">Ir a home</a> #}
+
 {% endblock contenido %}

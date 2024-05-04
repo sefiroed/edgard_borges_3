@@ -23,8 +23,12 @@ app_name = "producto"
 
 urlpatterns = [
     path("", views.home, name="home"),
+    path("productocategoria/create/", views.productocategoria_create,
+         name="productocategoria_create"),
     path("instrumentoscuerdas/create/", views.instrumentos_de_cuerdas,
          name="instrumentos_de_cuerdas"),
+    path("instrumentosaire/create/", views.instrumentos_de_aire,
+         name="instrumentos_de_aire"),
     # path("productocategoria/create/", views.productocategoria_create,
     #      name="productocategoria_create"),
     # path("instrumentoscuerdas/create/", views.instrumentos_de_cuerdas,
